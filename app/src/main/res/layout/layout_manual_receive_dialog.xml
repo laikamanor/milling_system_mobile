@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/layoutNoItemss"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:layout_margin="10dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <!--        <TextView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:textSize="15sp"-->
+    <!--            android:text="*Mill Warehouse:"/>-->
+
+    <!--        From whse-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*From Warehouse:"
+            android:textColor="@android:color/black"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            >
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/lblSelectedFromWhse"
+                android:layout_weight="3.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="N/A"
+                android:background="@color/colorGray"
+                />
+
+            <TextView
+                android:id="@+id/btnSelectFromWhse"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="..."
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:padding="3dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorWhite"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--        To Whse-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*To Warehouse:"
+            android:textColor="@android:color/black"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            >
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/lblSelectedToWhse"
+                android:layout_weight="3.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="N/A"
+                android:background="@color/colorGray"
+                />
+
+            <TextView
+                android:id="@+id/btnSelectToWhse"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="..."
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:padding="3dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorWhite"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- Truck-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Truck:"
+            android:textColor="@android:color/black"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            >
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/lblSelectedTruck"
+                android:layout_weight="3.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="N/A"
+                android:background="@color/colorGray"
+                />
+
+            <TextView
+                android:id="@+id/btnSelectTruck"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="..."
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:padding="3dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorWhite"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- Vessel-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vessel:"
+            android:textColor="@android:color/black"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            >
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/lblSelectedVessel"
+                android:layout_weight="3.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="N/A"
+                android:background="@color/colorGray"
+                />
+
+            <TextView
+                android:id="@+id/btnSelectVessel"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="..."
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:padding="3dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorWhite"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- Driver-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver:"
+            android:textColor="@android:color/black"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            >
+
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/lblSelectedDriver"
+                android:layout_weight="3.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="N/A"
+                android:background="@color/colorGray"
+                />
+
+            <TextView
+                android:id="@+id/btnSelectDriver"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="..."
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:padding="3dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorWhite"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <!--        AGI TRUCK SCALE-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtAGITS"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="AGI Truck Scale" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--        CHTI TRUCK SCALE-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtCHTITS"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="CHTI Truck Scale" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--        REMARKS-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtRemarks"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="*Remarks" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</LinearLayout>
+
+</LinearLayout>

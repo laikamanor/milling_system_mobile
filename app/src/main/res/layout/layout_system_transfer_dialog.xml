@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutNoItemss"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:textSize="15sp"-->
+        <!--            android:text="*Mill Warehouse:"/>-->
+
+        <!--        fg_item-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/labelFGItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FG Item:"
+                android:textColor="@android:color/black"
+                />
+
+<!--            fgitem -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                >
+
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:id="@+id/lblSelectedFGItem"
+                    android:layout_weight="3.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="N/A"
+                    android:background="@color/colorGray"
+                    />
+
+                <TextView
+                    android:id="@+id/btnSelectFGItem"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="..."
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:padding="3dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorWhite"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/labelFGUOM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FG UOM:"
+                android:textColor="@android:color/black"
+                />
+
+<!--            fg uom-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                >
+
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:id="@+id/lblSelectedFGUOM"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="N/A"
+                    android:background="@color/colorGray"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+<!--        truck-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Truck:"
+                android:textColor="@android:color/black"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                >
+
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:id="@+id/lblSelectedTruck"
+                    android:layout_weight="3.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="N/A"
+                    android:background="@color/colorGray"
+                    />
+
+                <TextView
+                    android:id="@+id/btnSelectTruck"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="..."
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:padding="3dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorWhite"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+<!--        driver-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Driver:"
+                android:textColor="@android:color/black"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                >
+
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:id="@+id/lblSelectedDriver"
+                    android:layout_weight="3.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="N/A"
+                    android:background="@color/colorGray"
+                    />
+
+                <TextView
+                    android:id="@+id/btnSelectDriver"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="..."
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:padding="3dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorWhite"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+<!--        AGI TS-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtAGITS"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="AGI Truck Scale" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--        CHTI TS-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtCHTITS"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="CHTI Truck Scale" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+<!--        tempering hour-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtTemperingHour"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tempering Hour"
+                android:inputType="numberDecimal"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--        transfer start date-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transfer Start Date:"
+                android:textColor="@android:color/black"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                >
+
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:id="@+id/lblSelectedStartDate"
+                    android:layout_weight="1.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="---- -- --"
+                    android:background="@color/colorGray"
+                    />
+
+                <TextView
+                    android:id="@+id/btnSelectStartDate"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="..."
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:padding="3dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorWhite"
+                    />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/lblSelectedStartTime"
+                    android:layout_weight="1.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="--:--"
+                    android:background="@color/colorGray"
+                    />
+
+                <TextView
+                    android:id="@+id/btnSelectStartTime"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="..."
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:padding="3dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorWhite"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--        transfer end date-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transfer End Date:"
+                android:textColor="@android:color/black"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                >
+
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:id="@+id/lblSelectedEndDate"
+                    android:layout_weight="1.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="---- -- --"
+                    android:background="@color/colorGray"
+                    />
+
+                <TextView
+                    android:id="@+id/btnSelectEndDate"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="..."
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:padding="3dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorWhite"
+                    />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/lblSelectedEndTime"
+                    android:layout_weight="1.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="--:--"
+                    android:background="@color/colorGray"
+                    />
+
+                <TextView
+                    android:id="@+id/btnSelectEndTime"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="..."
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:padding="3dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorWhite"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtRemarks"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="*Remarks" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

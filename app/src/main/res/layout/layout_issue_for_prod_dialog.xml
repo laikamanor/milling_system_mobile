@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutNoItemss"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:textSize="15sp"-->
+        <!--            android:text="*Mill Warehouse:"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*Mill Warehouse"
+                android:textColor="@android:color/black"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                >
+
+                <TextView
+                    android:textColor="@android:color/black"
+                    android:id="@+id/lblSelectedMill"
+                    android:layout_weight="3.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="N/A"
+                    android:background="@color/colorGray"
+                    />
+
+                <TextView
+                    android:id="@+id/btnSelectMill"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="..."
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:padding="3dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorWhite"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/layoutPacking"
+            android:visibility="gone"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*FG Item"
+                    android:textColor="@android:color/black"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    >
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:id="@+id/lblSelectedFGItem"
+                        android:layout_weight="3.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="N/A"
+                        android:background="@color/colorGray"
+                        />
+
+                    <TextView
+                        android:id="@+id/btnSelectFGItem"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="..."
+                        android:textSize="15sp"
+                        android:textAlignment="center"
+                        android:padding="3dp"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@color/colorWhite"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*FG UOM"
+                    android:textColor="@android:color/black"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:id="@+id/lblSelectedFGUOM"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="N/A"
+                        android:background="@color/colorGray"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_marginTop="5dp"
+
+                >
+
+                <TextView
+                    android:id="@+id/btnMinus"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:padding="3dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorWhite"
+                    />
+                <EditText
+                    android:id="@+id/txtFGQuantity"
+                    android:layout_weight="1.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:hint="Enter FG Quantity"
+                    android:textColor="@android:color/black"
+                    android:inputType="numberDecimal"
+                    />
+                <TextView
+                    android:id="@+id/btnPlus"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:padding="3dp"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/colorWhite"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtRemarks"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="*Remarks" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
